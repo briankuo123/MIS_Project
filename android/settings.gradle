@@ -1,0 +1,6 @@
+include ':app'
+rootProject.name = "TFLite Pose Estimation"
+
+include':unityLibrary'
+project(':unityLibrary').projectDir= new File('C:\\MIS_project\\android0810\\unityLibrary')
+include ':mylibrary'

@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_controller"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/boardFragment"
+        android:name="org.BoardFragment"
+        android:label="fragment_board"
+        tools:layout="@layout/fragment_board" >
+        <action
+            android:id="@+id/action_boardFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="org.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_boardFragment"
+            app:destination="@id/boardFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="org.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homePageFragment"
+        android:name="org.HomePageFragment"
+        android:label="fragment_home_page"
+        tools:layout="@layout/fragment_home_page" >
+        <action
+            android:id="@+id/action_homePageFragment_to_boardFragment"
+            app:destination="@id/boardFragment" />
+        <action
+            android:id="@+id/action_homePageFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_homePageFragment_to_personalFragment"
+            app:destination="@id/personalFragment" />
+        <action
+            android:id="@+id/action_homePageFragment_to_gamehomepageFragment"
+            app:destination="@id/gamehomepageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="org.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_menuChooseFragment"
+            app:destination="@id/MenuChooseFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_menuChoose2Fragment"
+            app:destination="@id/MenuChoose2Fragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_menuChoose3Fragment"
+            app:destination="@id/MenuChoose3Fragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_adviceFragment"
+            app:destination="@id/adviceFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_menu2Fragment"
+            app:destination="@id/menu2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menu2Fragment"
+        android:name="org.Menu2Fragment"
+        android:label="fragment_menu2"
+        tools:layout="@layout/fragment_menu2" >
+        <action
+            android:id="@+id/action_menu2Fragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+        <action
+            android:id="@+id/action_menu2Fragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_menu2Fragment_to_adviceFragment"
+            app:destination="@id/adviceFragment" />
+        <action
+            android:id="@+id/action_menu2Fragment_to_menu3Fragment"
+            app:destination="@id/menu3Fragment" />
+        <action
+            android:id="@+id/action_menu2Fragment_to_menu4Fragment"
+            app:destination="@id/menu4Fragment" />
+        <action
+            android:id="@+id/action_menu2Fragment_to_menu5Fragment"
+            app:destination="@id/menu5Fragment"/>
+        <action
+            android:id="@+id/action_menu2Fragment_to_menu6Fragment"
+            app:destination="@id/menu6Fragment"/>
+        <action
+            android:id="@+id/action_menu2Fragment_to_menu7Fragment"
+            app:destination="@id/menu7Fragment"/>
+        <action
+            android:id="@+id/action_menu2Fragment_to_menu8Fragment"
+            app:destination="@id/menu8Fragment"/>
+        <action
+            android:id="@+id/action_menu2Fragment_to_menuChooseFragment"
+            app:destination="@id/MenuChooseFragment"/>
+        <action
+            android:id="@+id/action_menu2Fragment_to_menuChoose2Fragment"
+            app:destination="@id/MenuChoose2Fragment"/>
+        <action
+            android:id="@+id/action_menu2Fragment_to_menuChoose3Fragment"
+            app:destination="@id/MenuChoose3Fragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/menu3Fragment"
+        android:name="org.Menu3Fragment"
+        android:label="fragment_menu3"
+        tools:layout="@layout/fragment_menu3" >
+        <action
+            android:id="@+id/action_menu3Fragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+        <action
+            android:id="@+id/action_menu3Fragment_to_menu2Fragment"
+            app:destination="@id/menu2Fragment" />
+        <action
+            android:id="@+id/action_menu3Fragment_to_menuChooseFragment"
+            app:destination="@id/MenuChooseFragment" />
+        <action
+            android:id="@+id/action_menu3Fragment_to_menuChoose2Fragment"
+            app:destination="@id/MenuChoose2Fragment" />
+        <action
+            android:id="@+id/action_menu3Fragment_to_menuChoose3Fragment"
+            app:destination="@id/MenuChoose3Fragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/menu4Fragment"
+        android:name="org.Menu4Fragment"
+        android:label="fragment_menu4"
+        tools:layout="@layout/fragment_menu4" >
+        <action
+            android:id="@+id/action_menu4Fragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+        <action
+            android:id="@+id/action_menu4Fragment_to_menu2Fragment"
+            app:destination="@id/menu2Fragment" />
+        <action
+            android:id="@+id/action_menu4Fragment_to_menuChooseFragment"
+            app:destination="@id/MenuChooseFragment" />
+        <action
+            android:id="@+id/action_menu4Fragment_to_menuChoose2Fragment"
+            app:destination="@id/MenuChoose2Fragment" />
+        <action
+            android:id="@+id/action_menu4Fragment_to_menuChoose3Fragment"
+            app:destination="@id/MenuChoose3Fragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/menu5Fragment"
+        android:name="org.Menu5Fragment"
+        android:label="fragment_menu5"
+        tools:layout="@layout/fragment_menu5" >
+        <action
+            android:id="@+id/action_menu5Fragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+        <action
+            android:id="@+id/action_menu5Fragment_to_menu2Fragment"
+            app:destination="@id/menu2Fragment" />
+        <action
+            android:id="@+id/action_menu5Fragment_to_menuChoose2Fragment"
+            app:destination="@id/MenuChoose2Fragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/menu6Fragment"
+        android:name="org.Menu6Fragment"
+        android:label="fragment_menu6"
+        tools:layout="@layout/fragment_menu6" >
+        <action
+            android:id="@+id/action_menu6Fragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+        <action
+            android:id="@+id/action_menu6Fragment_to_menu2Fragment"
+            app:destination="@id/menu2Fragment" />
+        <action
+            android:id="@+id/action_menu6Fragment_to_menuChoose2Fragment"
+            app:destination="@id/MenuChoose2Fragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/menu7Fragment"
+        android:name="org.Menu7Fragment"
+        android:label="fragment_menu7"
+        tools:layout="@layout/fragment_menu7" >
+        <action
+            android:id="@+id/action_menu7Fragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+        <action
+            android:id="@+id/action_menu7Fragment_to_menu2Fragment"
+            app:destination="@id/menu2Fragment" />
+        <action
+            android:id="@+id/action_menu7Fragment_to_menuChooseFragment"
+            app:destination="@id/MenuChooseFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/menu8Fragment"
+        android:name="org.Menu8Fragment"
+        android:label="fragment_menu8"
+        tools:layout="@layout/fragment_menu8" >
+        <action
+            android:id="@+id/action_menu8Fragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+        <action
+            android:id="@+id/action_menu8Fragment_to_menu2Fragment"
+            app:destination="@id/menu2Fragment" />
+        <action
+            android:id="@+id/action_menu8Fragment_to_menuChooseFragment"
+            app:destination="@id/MenuChooseFragment" />
+        <action
+            android:id="@+id/action_menu8Fragment_to_menuChoose2Fragment"
+            app:destination="@id/MenuChoose2Fragment" />
+        <action
+            android:id="@+id/action_menu8Fragment_to_menuChoose3Fragment"
+            app:destination="@id/MenuChoose3Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/MenuChooseFragment"
+        android:name="org.MenuChooseFragment"
+        android:label="fragment_menu_choose"
+        tools:layout="@layout/fragment_menu_choose" >
+        <action
+            android:id="@+id/action_menuChooseFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_menuChooseFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+        <action
+            android:id="@+id/action_menuChooseFragment_to_MovementKneeHoldingFragment"
+            app:destination="@id/MovementKneeHoldingFragment" />
+        <action
+            android:id="@+id/action_menuChooseFragment_to_MovementHighLiftLegFragment"
+            app:destination="@id/MovementHighLiftLegFragment" />
+        <action
+            android:id="@+id/action_menuChooseFragment_to_MovementButtKickerFragment"
+            app:destination="@id/MovementButtKickerFragment" />
+        <action
+            android:id="@+id/action_menuChooseFragment_to_MovementDynamicLungeFragment"
+            app:destination="@id/MovementDynamicLungeFragment" />
+        <action
+            android:id="@+id/action_menuChooseFragment_to_exersiceFragment"
+            app:destination="@id/exersiceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/MenuChoose2Fragment"
+        android:name="org.MenuChoose2Fragment"
+        android:label="fragment_menu_choose2"
+        tools:layout="@layout/fragment_menu_choose2" >
+        <action
+            android:id="@+id/action_menuChoose2Fragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_menuChoose2Fragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+        <action
+            android:id="@+id/action_menuChoose2Fragment_to_MovementNeckStretchFragment"
+            app:destination="@id/MovementNeckStretchFragment" />
+        <action
+            android:id="@+id/action_menuChoose2Fragment_to_MovementSideStretchFragment"
+            app:destination="@id/MovementSideStretchFragment" />
+        <action
+            android:id="@+id/action_menuChoose2Fragment_to_MovementLookUpStretchFragment"
+            app:destination="@id/MovementLookUpStretchFragment" />
+        <action
+            android:id="@+id/action_menuChoose2Fragment_to_MovementArmDownStretchFragment"
+            app:destination="@id/MovementArmDownStretchFragment" />
+        <action
+            android:id="@+id/action_menuChoose2Fragment_to_exersice2Fragment"
+            app:destination="@id/exersice2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/MenuChoose3Fragment"
+        android:name="org.MenuChoose3Fragment"
+        android:label="fragment_menu_choose3"
+        tools:layout="@layout/fragment_menu_choose3" >
+        <action
+            android:id="@+id/action_menuChoose3Fragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_menuChoose3Fragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+        <action
+            android:id="@+id/action_menuChoose3Fragment_to_MovementPlankFragment"
+            app:destination="@id/MovementPlankFragment" />
+        <action
+            android:id="@+id/action_menuChoose3Fragment_to_MovementSitUpFragment"
+            app:destination="@id/MovementSitUpFragment" />
+        <action
+            android:id="@+id/action_menuChoose3Fragment_to_MovementLegRaiseFragment"
+            app:destination="@id/MovementLegRaiseFragment" />
+        <action
+            android:id="@+id/action_menuChoose3Fragment_to_MovementBirdDogFragment"
+            app:destination="@id/MovementBirdDogFragment" />
+        <action
+            android:id="@+id/action_menuChoose3Fragment_to_exersice3Fragment"
+            app:destination="@id/exersice3Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/MovementKneeHoldingFragment"
+        android:name="org.MovementKneeHoldingFragment"
+        android:label="fragment_movement"
+        tools:layout="@layout/fragment_movement_kneeholding" >
+        <action
+            android:id="@+id/action_MovementKneeHoldingFragment_to_menuChooseFragment"
+            app:destination="@id/MenuChooseFragment" />
+        <action
+            android:id="@+id/action_MovementKneeHoldingFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/MovementHighLiftLegFragment"
+        android:name="org.MovementHighLiftLegFragment"
+        android:label="fragment_movement"
+        tools:layout="@layout/fragment_movement_highliftleg" >
+        <action
+            android:id="@+id/action_MovementHighLiftLegFragment_to_menuChooseFragment"
+            app:destination="@id/MenuChooseFragment" />
+        <action
+            android:id="@+id/action_MovementHighLiftLegFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/MovementButtKickerFragment"
+        android:name="org.MovementButtKickerFragment"
+        android:label="fragment_movement"
+        tools:layout="@layout/fragment_movement_buttkicker" >
+        <action
+            android:id="@+id/action_MovementButtKickerFragment_to_menuChooseFragment"
+            app:destination="@id/MenuChooseFragment" />
+        <action
+            android:id="@+id/action_MovementButtKickerFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/MovementDynamicLungeFragment"
+        android:name="org.MovementDynamicLungeFragment"
+        android:label="fragment_movement"
+        tools:layout="@layout/fragment_movement_dynamiclunge" >
+        <action
+            android:id="@+id/action_MovementDynamicLungeFragment_to_menuChooseFragment"
+            app:destination="@id/MenuChooseFragment" />
+        <action
+            android:id="@+id/action_MovementDynamicLungeFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/MovementNeckStretchFragment"
+        android:name="org.MovementNeckStretchFragment"
+        android:label="fragment_movement"
+        tools:layout="@layout/fragment_movement_neckstretch" >
+        <action
+            android:id="@+id/action_MovementNeckStretchFragment_to_menuChoose2Fragment"
+            app:destination="@id/MenuChoose2Fragment" />
+        <action
+            android:id="@+id/action_MovementNeckStretchFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/MovementSideStretchFragment"
+        android:name="org.MovementSideStretchFragment"
+        android:label="fragment_movement"
+        tools:layout="@layout/fragment_movement_sidestretch" >
+        <action
+            android:id="@+id/action_MovementSideStretchFragment_to_menuChoose2Fragment"
+            app:destination="@id/MenuChoose2Fragment" />
+        <action
+            android:id="@+id/action_MovementSideStretchFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/MovementLookUpStretchFragment"
+        android:name="org.MovementLookUpStretchFragment"
+        android:label="fragment_movement"
+        tools:layout="@layout/fragment_movement_lookupstretch" >
+        <action
+            android:id="@+id/action_MovementLookUpStretchFragment_to_menuChoose2Fragment"
+            app:destination="@id/MenuChoose2Fragment" />
+        <action
+            android:id="@+id/action_MovementLookUpStretchFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/MovementArmDownStretchFragment"
+        android:name="org.MovementArmDownStretchFragment"
+        android:label="fragment_movement"
+        tools:layout="@layout/fragment_movement_armdownstretch" >
+        <action
+            android:id="@+id/action_MovementArmDownStretchFragment_to_menuChoose2Fragment"
+            app:destination="@id/MenuChoose2Fragment" />
+        <action
+            android:id="@+id/action_MovementArmDownStretchFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/MovementPlankFragment"
+        android:name="org.MovementPlankFragment"
+        android:label="fragment_movement"
+        tools:layout="@layout/fragment_movement_plank" >
+        <action
+            android:id="@+id/action_MovementPlankFragment_to_menuChoose3Fragment"
+            app:destination="@id/MenuChoose3Fragment" />
+        <action
+            android:id="@+id/action_MovementPlankFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/MovementSitUpFragment"
+        android:name="org.MovementSitUpFragment"
+        android:label="fragment_movement"
+        tools:layout="@layout/fragment_movement_situp" >
+        <action
+            android:id="@+id/action_MovementSitUpFragment_to_menuChoose3Fragment"
+            app:destination="@id/MenuChoose3Fragment" />
+        <action
+            android:id="@+id/action_MovementSitUpFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/MovementLegRaiseFragment"
+        android:name="org.MovementLegRaiseFragment"
+        android:label="fragment_movement"
+        tools:layout="@layout/fragment_movement_legraise" >
+        <action
+            android:id="@+id/action_MovementLegRaiseFragment_to_menuChoose3Fragment"
+            app:destination="@id/MenuChoose3Fragment" />
+        <action
+            android:id="@+id/action_MovementLegRaiseFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/MovementBirdDogFragment"
+        android:name="org.MovementBirdDogFragment"
+        android:label="fragment_movement"
+        tools:layout="@layout/fragment_movement_birddog" >
+        <action
+            android:id="@+id/action_MovementBirdDogFragment_to_menuChoose3Fragment"
+            app:destination="@id/MenuChoose3Fragment" />
+        <action
+            android:id="@+id/action_MovementBirdDogFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/adviceFragment"
+        android:name="org.AdviceFragment"
+        android:label="fragment_advice"
+        tools:layout="@layout/fragment_advice" >
+        <action
+            android:id="@+id/action_adviceFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_adviceFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/personalFragment"
+        android:name="org.PersonalFragment"
+        android:label="fragment_personal"
+        tools:layout="@layout/fragment_personal" >
+        <action
+            android:id="@+id/action_personalFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+        <action
+            android:id="@+id/action_personalFragment_to_tour1Fragment"
+            app:destination="@id/tour1Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/tour1Fragment"
+        android:name="org.Tour1Fragment"
+        android:label="fragment_tour1"
+        tools:layout="@layout/fragment_tour1" >
+        <action
+            android:id="@+id/action_tour1Fragment_to_tour2Fragment"
+            app:destination="@id/tour2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tour2Fragment"
+        android:name="org.Tour2Fragment"
+        android:label="fragment_tour2"
+        tools:layout="@layout/fragment_tour2" >
+        <action
+            android:id="@+id/action_tour2Fragment_to_tour3Fragment"
+            app:destination="@id/tour3Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tour3Fragment"
+        android:name="org.Tour3Fragment"
+        android:label="fragment_tour3"
+        tools:layout="@layout/fragment_tour3" >
+        <action
+            android:id="@+id/action_tour3Fragment_to_tour4Fragment"
+            app:destination="@id/tour4Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tour4Fragment"
+        android:name="org.Tour4Fragment"
+        android:label="fragment_tour4"
+        tools:layout="@layout/fragment_tour4" >
+        <action
+            android:id="@+id/action_tour4Fragment_to_tour5Fragment"
+            app:destination="@id/tour5Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tour5Fragment"
+        android:name="org.Tour5Fragment"
+        android:label="fragment_tour5"
+        tools:layout="@layout/fragment_tour5" >
+        <action
+            android:id="@+id/action_tour5Fragment_to_tour6Fragment"
+            app:destination="@id/tour6Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tour6Fragment"
+        android:name="org.Tour6Fragment"
+        android:label="fragment_tour6"
+        tools:layout="@layout/fragment_tour6" >
+        <action
+            android:id="@+id/action_tour6Fragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gamehomepageFragment"
+        android:name="org.GameHomePageFragment"
+        android:label="fragment_game_home_page"
+        tools:layout="@layout/fragment_game_home_page" >
+        <action
+            android:id="@+id/action_gamehomepageFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+        <action
+            android:id="@+id/action_gamehomepageFragment_to_skilltreeFragment"
+            app:destination="@id/skilltreeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/skilltreeFragment"
+        android:name="org.SkilltreeFragment"
+        android:label="fragment_skilltree"
+        tools:layout="@layout/fragment_skilltree" >
+        <action
+            android:id="@+id/action_skilltreeFragment_to_gamehomepageFragment"
+            app:destination="@id/gamehomepageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/exersiceFragment"
+        android:name="org.ExersiceFragment"
+        android:label="fragment_exersice"
+        tools:layout="@layout/fragment_exersice" >
+        <action
+            android:id="@+id/action_exersiceFragment_to_menuChooseFragment"
+            app:destination="@id/MenuChooseFragment" />
+        <action
+            android:id="@+id/action_exersiceFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+        <action
+            android:id="@+id/action_exersiceFragment_to_RecordFragment"
+            app:destination="@id/RecordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/exersice2Fragment"
+        android:name="org.Exersice2Fragment"
+        android:label="fragment_exersice2"
+        tools:layout="@layout/fragment_exersice2" >
+        <action
+            android:id="@+id/action_exersice2Fragment_to_menuChoose2Fragment"
+            app:destination="@id/MenuChoose2Fragment" />
+        <action
+            android:id="@+id/action_exersice2Fragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+        <action
+            android:id="@+id/action_exersice2Fragment_to_Record2Fragment"
+            app:destination="@id/Record2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/exersice3Fragment"
+        android:name="org.Exersice3Fragment"
+        android:label="fragment_exersice3"
+        tools:layout="@layout/fragment_exersice3" >
+        <action
+            android:id="@+id/action_exersice3Fragment_to_menuChoose3Fragment"
+            app:destination="@id/MenuChoose3Fragment" />
+        <action
+            android:id="@+id/action_exersice3Fragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+        <action
+            android:id="@+id/action_exersice3Fragment_to_Record3Fragment"
+            app:destination="@id/Record3Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/RecordFragment"
+        android:name="org.RecordFragment"
+        android:label="fragment_record"
+        tools:layout="@layout/fragment_record" >
+        <action
+            android:id="@+id/action_RecordFragment_to_menuChooseFragment"
+            app:destination="@id/MenuChooseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/Record2Fragment"
+        android:name="org.Record2Fragment"
+        android:label="fragment_record2"
+        tools:layout="@layout/fragment_record2" >
+        <action
+            android:id="@+id/action_Record2Fragment_to_menuChoose2Fragment"
+            app:destination="@id/MenuChoose2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/Record3Fragment"
+        android:name="org.Record3Fragment"
+        android:label="fragment_record3"
+        tools:layout="@layout/fragment_record3" >
+        <action
+            android:id="@+id/action_Record3Fragment_to_menuChoose3Fragment"
+            app:destination="@id/MenuChoose3Fragment" />
+    </fragment>
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="org.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+</navigation>

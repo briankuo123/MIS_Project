@@ -1,0 +1,74 @@
+<resources>
+    <string name="tfe_pe_app_name">TFL Pose Estimation</string>
+    <string name="tfe_pe_request_permission">This app needs camera permission.</string>
+    <string name="tfe_pe_tv_score">Score: %.2f</string>
+    <string name="tfe_pe_tv_model">Model: </string>
+    <string name="tfe_pe_tv_fps">Fps: %d</string>
+    <string name="tfe_pe_tv_device">Device: </string>
+    <string name="tfe_pe_tv_classification_value">- %s</string>
+    <string name="tfe_pe_tv_pose_classification">Pose Classification</string>
+    <string name="tfe_pe_tv_tracking">Tracker: </string>
+    <string name="tfe_pe_gpu_error">Movenet MultiPose does not support GPU. Fallback to CPU.</string>
+    <string name="titlename1">健身大作戰</string>
+    <string name="board">今日公告</string>
+    <string name="startexe">開始運動</string>
+
+    <string-array name="tfe_pe_models_array">
+        <item>Movenet Lightning</item>
+        <item>Movenet Thunder</item>
+        <item>Movenet MultiPose</item>
+        <item>Posenet</item>
+    </string-array>
+
+    <string-array name="tfe_pe_device_name">
+        <item>CPU</item>
+        <item>GPU</item>
+        <item>NNAPI</item>
+    </string-array>
+
+    <string-array name="tfe_pe_tracker_array">
+        <item>Off</item>
+        <item>BoundingBox</item>
+        <item>Keypoint</item>
+    </string-array>
+
+    <string-array name="movement">
+        <item>Knee Holding</item>
+        <item>High Lift Leg</item>
+        <item>Butt_Kickers</item>
+        <item>Dynamic Lunge</item>
+        <item>Side Stretch</item>
+        <item>Neck Stretch</item>
+        <item>LookUp Stretch</item>
+        <item>ArmDown Stretch</item>
+        <item>Plank</item>
+        <item>Sit Ups</item>
+        <item>Leg Raise</item>
+        <item>Bird Dog</item>
+    </string-array>
+
+    <string-array name="movement_chinese_blood_circulation">
+        <item>抱膝向胸</item>
+        <item>高抬腿</item>
+        <item>後踢臀</item>
+        <item>左右弓箭步</item>
+    </string-array>
+
+    <string-array name="movement_chinese_stretch">
+        <item>頸部側向伸展</item>
+        <item>體側伸展</item>
+        <item>抬頭延展手上舉</item>
+        <item>抬頭延展後上舉</item>
+    </string-array>
+
+    <string-array name="movement_core">
+        <item>棒式</item>
+        <item>仰臥起坐</item>
+        <item>仰臥交替抬腿</item>
+        <item>鳥狗式</item>
+    </string-array>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="game_view_content_description">Game view</string>
+</resources>
